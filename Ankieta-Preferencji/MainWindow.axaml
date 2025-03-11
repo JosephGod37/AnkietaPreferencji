@@ -6,7 +6,7 @@
         x:Class="Ankieta_Preferencji.MainWindow"
         Title="Ankieta_Preferencji">
         <StackPanel HorizontalAlignment="Center">
-            <TextBlock HorizontalAlignment="Center">Wprowadz Dane Uzytkownika</TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Wprowadz Dane Uzytkownika</TextBlock>
             <TextBox x:Name="TextBox" Width="220" Height="30" Watermark="Wpisz swoje imie" 
                      Margin="5"/>
             
@@ -26,12 +26,14 @@
 
                     <RowDefinition Height="Auto" />
                     
+                    <RowDefinition Height="Auto" />
+                    
 
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
 
-                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto"  />
 
                     <ColumnDefinition Width="Auto" />
                     
@@ -39,14 +41,16 @@
                     
                 </Grid.ColumnDefinitions>
                 
-                <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Czy lubisz programowac" />
-                <CheckBox Grid.Row="0" Grid.Column="1" Margin="10" Content="Tak" />
+                <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Odpowiedz Na Pytania Ankiety" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontWeight="Bold"/>
                 
-                <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Czy lubisz bule" />
+                <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Czy lubisz programowac" />
                 <CheckBox Grid.Row="1" Grid.Column="1" Margin="10" Content="Tak" />
                 
-                <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Czy lubisz gotowac" />
+                <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Czy lubisz bulki" />
                 <CheckBox Grid.Row="2" Grid.Column="1" Margin="10" Content="Tak" />
+                
+                <TextBlock Grid.Row="3" Grid.Column="0" Margin="10" Text="Czy lubisz gotowac" />
+                <CheckBox Grid.Row="3" Grid.Column="1" Margin="10" Content="Tak" />
             </Grid>
             
             
@@ -60,8 +64,7 @@
                     Foreground="White"
                     HorizontalAlignment="Center"
                     Click="SubmitButton_Click"></Button>
-            <Label x:Name="infoLabel" Width="400" 
-                   Margin="5" />
+            <Label x:Name="infoLabel"  Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
         
     
