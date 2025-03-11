@@ -11,11 +11,19 @@
                      Margin="5"/>
             
             <ComboBox x:Name="my_ComboBox" Width="220" Margin="5" SelectedIndex="0" HorizontalAlignment="Center">
-                <ComboBoxItem Content="Wybierz zainteresowanie"/>
+                <ComboBoxItem Content="Wybierz zainteresowanie" IsEnabled="False"/>
                 <ComboBoxItem Content="Technologia"/>
                 <ComboBoxItem Content="Sport"/>
                 <ComboBoxItem Content="Kultura"/>
             </ComboBox>
+            <Button x:Name="SubmitButton" Margin="5" Content="Zatwierdz dane"
+                    Background="Black"
+                    CornerRadius="20"
+                    BorderThickness="2"
+                    BorderBrush="Black"
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    Click="SubmitButton_Click"></Button>
             <Grid HorizontalAlignment="Center" Margin="5">
 
                 <Grid.RowDefinitions>
@@ -44,27 +52,28 @@
                 <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Odpowiedz Na Pytania Ankiety" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontWeight="Bold"/>
                 
                 <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Czy lubisz programowac" />
-                <CheckBox Grid.Row="1" Grid.Column="1" Margin="10" Content="Tak" />
+                <CheckBox x:Name="myCheckBox1" Grid.Row="1" Grid.Column="1" Margin="10" Content="Tak" />
                 
                 <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Czy lubisz bulki" />
-                <CheckBox Grid.Row="2" Grid.Column="1" Margin="10" Content="Tak" />
+                <CheckBox x:Name="myCheckBox2" Grid.Row="2" Grid.Column="1" Margin="10" Content="Tak" />
                 
                 <TextBlock Grid.Row="3" Grid.Column="0" Margin="10" Text="Czy lubisz gotowac" />
-                <CheckBox Grid.Row="3" Grid.Column="1" Margin="10" Content="Tak" />
+                <CheckBox x:Name="myCheckBox3" Grid.Row="3" Grid.Column="1" Margin="10" Content="Tak" />
             </Grid>
             
             
             
             
-            <Button x:Name="SubmitButton" Margin="5" Content="Zatwierdz dane"
+            <Button x:Name="SubmitButton2" Margin="5" Content="Zatwierdz dane"
                     Background="Black"
                     CornerRadius="20"
                     BorderThickness="2"
                     BorderBrush="Black"
                     Foreground="White"
                     HorizontalAlignment="Center"
-                    Click="SubmitButton_Click"></Button>
+                    Click="SubmitButton_Click2"></Button>
             <Label x:Name="infoLabel"  Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="infoLabel2"  Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
         
     
