@@ -16,6 +16,42 @@
                 <ComboBoxItem Content="Sport"/>
                 <ComboBoxItem Content="Kultura"/>
             </ComboBox>
+            <Grid HorizontalAlignment="Center" Margin="5">
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="Auto" />
+
+                    <RowDefinition Height="Auto" />
+
+                    <RowDefinition Height="Auto" />
+                    
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="Auto" />
+
+                    <ColumnDefinition Width="Auto" />
+                    
+
+                    
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Czy lubisz programowac" />
+                <CheckBox Grid.Row="0" Grid.Column="1" Margin="10" Content="Tak" />
+                
+                <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Czy lubisz bule" />
+                <CheckBox Grid.Row="1" Grid.Column="1" Margin="10" Content="Tak" />
+                
+                <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Czy lubisz gotowac" />
+                <CheckBox Grid.Row="2" Grid.Column="1" Margin="10" Content="Tak" />
+            </Grid>
+            
+            
+            
+            
             <Button x:Name="SubmitButton" Margin="5" Content="Zatwierdz dane"
                     Background="Black"
                     CornerRadius="20"
