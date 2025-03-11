@@ -64,3 +64,4 @@
 /home/joseph/Pulpit/C#/Ankieta-Preferencji/Ankieta-Preferencji/obj/Debug/net9.0/Ankieta-.8AAF6148.Up2Date
 /home/joseph/Pulpit/C#/Ankieta-Preferencji/Ankieta-Preferencji/obj/Debug/net9.0/Ankieta-Preferencji.genruntimeconfig.cache
 /home/joseph/Pulpit/C#/Ankieta-Preferencji/Ankieta-Preferencji/obj/Debug/net9.0/ref/Ankieta-Preferencji.dll
+/home/joseph/Pulpit/C#/Ankieta-Preferencji/Ankieta-Preferencji/obj/Debug/net9.0/Ankieta-Preferencji.sourcelink.json
